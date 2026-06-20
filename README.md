@@ -105,7 +105,6 @@ kosync/
 
 ### API Endpoints
 
-
 | Endpoint        | Method | Purpose                | Payload / Response                                                                                        |
 | --------------- | ------ | ---------------------- | --------------------------------------------------------------------------------------------------------- |
 | `/users/create` | POST   | Registers a new user.  | **Body:** `{ "username": "...", "password_hash": "..." }`<br>**Returns:** `201 Created` or `409 Conflict` |
@@ -117,10 +116,8 @@ kosync/
 
 The `User` model provides the following methods:
 
-
 | Method            | Purpose                      | Returns            | Throws                                          |
 | ----------------- | ---------------------------- | ------------------ | ----------------------------------------------- |
-|                   |                              |                    |                                                 |
 | `getById(id)`     | Retrieves a user by ID       | `User`             | `NotFoundError` if user doesn't exist           |
 | `getByUsername()` | Retrieves a user by username | `User`             | `NotFoundError` if user doesn't exist           |
 | `deleteById(id)`  | Deletes a user by ID         | `void`             | `NotFoundError` if user doesn't exist           |
