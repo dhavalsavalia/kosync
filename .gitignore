@@ -40,3 +40,12 @@ yarn-error.log*
 **/*.log
 package-lock.json
 **/*.bun
+
+# local database file
+/data/db.sqlite
+
+# env files
+.env*
+
+# local tesing files
+.http
